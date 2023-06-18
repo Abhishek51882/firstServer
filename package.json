@@ -1,0 +1,11 @@
+{
+  "name": "firstserver",
+  "version": "1.0.0",
+  "description": "this is my first project",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "author": "Abhishek verma",
+  "license": "ISC"
+}
