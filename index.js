@@ -1,10 +1,20 @@
 const http=require('http');
+const fs=require('fs');
 const port=8000;
 
 const server=http.createServer((req,res)=>{
     console.log(req.url);
     res.writeHead(404,{'Content-Type': 'text/html'})
-    
+    fs.readFile("home.html",(err, data)=>{
+        if(err){
+           return res.end("Sorry");
+            
+        }
+        res.end(data);
+
+    })
+
+
     // switch(req.url){
     //     case '/about':res.end("<h1>About page</h1>");
     //     break;
